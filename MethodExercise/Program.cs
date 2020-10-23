@@ -26,8 +26,10 @@ namespace MethodExercise
             Console.WriteLine();
 
             Console.WriteLine("Now, let's do some math.");
-            int firstNum = 3;
-            int secondNum = 4;
+            Console.WriteLine("First number:");
+            int firstNum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Second number:");
+            int secondNum = Convert.ToInt32(Console.ReadLine());
 
             int newSum = Add(firstNum, secondNum);
             Console.WriteLine($"The sum of the numbers is {newSum}.");
@@ -37,9 +39,13 @@ namespace MethodExercise
 
             Console.WriteLine();
             Console.WriteLine("Challenge Mode!");
-            int thirdNum = 5;
-            int fourthNum = 6;
-            int fifthNum = 7;
+
+            Console.WriteLine("Third number:");
+            int thirdNum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Third number:");
+            int fourthNum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Third number:");
+            int fifthNum = Convert.ToInt32(Console.ReadLine());
             int newSum3 = Add(firstNum, secondNum, thirdNum);
             Console.WriteLine($"Sum of three numbers: {newSum3}");
             int newSum5 = Add(firstNum, secondNum, thirdNum, fourthNum, fifthNum);
