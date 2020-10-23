@@ -22,6 +22,7 @@ namespace MethodExercise
             Console.WriteLine($"And your quest: {theQuest}.");
             Console.WriteLine($"And on Sunday, you will be attending {yourParish} for Mass.");
             Console.WriteLine($"Will you be wearing your {favColor} shirt? Ha ha!");
+            Console.WriteLine($"I trust that {yourParish} is helping in {theQuest}.");
             Console.WriteLine();
 
             Console.WriteLine("Now, let's do some math.");
