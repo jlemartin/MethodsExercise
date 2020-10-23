@@ -33,11 +33,31 @@ namespace MethodExercise
             int newProduct = Multiply(firstNum, secondNum);
             Console.WriteLine($"The product of the two numbers is {newProduct}.");
 
+            Console.WriteLine();
+            Console.WriteLine("Challenge Mode!");
+            int thirdNum = 5;
+            int fourthNum = 6;
+            int fifthNum = 7;
+            int newSum3 = Add(firstNum, secondNum, thirdNum);
+            Console.WriteLine($"Sum of three numbers: {newSum3}");
+            int newSum5 = Add(firstNum, secondNum, thirdNum, fourthNum, fifthNum);
+            Console.WriteLine($"Sum of five numbers: {newSum5}");
+
         }
 
         public static int Add(int x, int y)
         {
             return x + y;
+        }
+
+        public static int Add(int x, int y, int z)
+        {
+            return x + y + z;
+        }
+
+        public static int Add(int x, int y, int z, int a, int b)
+        {
+            return x + y + z + a + b;
         }
 
         public static int Multiply(int x, int y)
