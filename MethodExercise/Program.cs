@@ -6,6 +6,8 @@ namespace MethodExercise
     {
         static void Main(string[] args)
         {
+            // Exercise 1
+
             Console.WriteLine("What is your first name?");
             string firstName = Console.ReadLine();
 
@@ -17,6 +19,7 @@ namespace MethodExercise
 
             Console.WriteLine("What is your parish?");
             string yourParish = Console.ReadLine();
+            Console.WriteLine();
 
             Console.WriteLine($"OK, {firstName}, your favorite color is {favColor}.");
             Console.WriteLine($"And your quest: {theQuest}.");
@@ -25,6 +28,7 @@ namespace MethodExercise
             Console.WriteLine($"I trust that {yourParish} is helping in {theQuest}.");
             Console.WriteLine();
 
+            // Exercise 2
             Console.WriteLine("Now, let's do some math.");
             Console.WriteLine("First number:");
             int firstNum = Convert.ToInt32(Console.ReadLine());
@@ -42,9 +46,9 @@ namespace MethodExercise
 
             Console.WriteLine("Third number:");
             int thirdNum = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Third number:");
+            Console.WriteLine("Fourth number:");
             int fourthNum = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Third number:");
+            Console.WriteLine("Fifth number:");
             int fifthNum = Convert.ToInt32(Console.ReadLine());
             int newSum3 = Add(firstNum, secondNum, thirdNum);
             Console.WriteLine($"Sum of three numbers: {newSum3}");
@@ -58,11 +62,13 @@ namespace MethodExercise
             return x + y;
         }
 
+        // Overloaded method for 3 inputs
         public static int Add(int x, int y, int z)
         {
             return x + y + z;
         }
 
+        // Overloaded method for 5 inputs
         public static int Add(int x, int y, int z, int a, int b)
         {
             return x + y + z + a + b;
